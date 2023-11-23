@@ -1,0 +1,8 @@
+[submodule "FoxStudios-EurekaRoot"]
+	path = FoxStudios-EurekaRoot
+	url = https://github.com/FoxStudiosTeam/FoxStudios-EurekaRoot
+	branch = master
+[submodule "FoxStudios-PyBid"]
+	path = FoxStudios-PyBid
+	url = https://github.com/AgniaEndie/FoxStudios-PyBid
+	branch = master

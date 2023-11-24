@@ -6,3 +6,7 @@
 	path = FoxStudios-PyBid
 	url = https://github.com/AgniaEndie/FoxStudios-PyBid
 	branch = master
+[submodule "FoxStudios-Gateway"]
+	path = FoxStudios-Gateway
+	url = https://github.com/FoxStudiosTeam/FoxStudios-Gateway
+	branch = master

@@ -1,10 +1,22 @@
+version: "3.8"
 services:
-  web:
+  root:
+    build:
+      context: FoxStudios-EurekaRoot
+    ports:
+      - '8081:8081'
+  loadbalancer:
+    build:
+      context: FoxStudios-Gateway
+    ports:
+      - '8082:8082'
+  neuro:
     build:
       context: FoxStudios-PyBid
       target: builder
-    # flask requires SIGINT to stop gracefully
-    # (default stop signal from Compose is SIGTERM)
     stop_signal: SIGINT
     ports:
-      - '9090:9090'
+      - "9090:9090"
+    deploy:
+      mode: replicated
+      replicas: 1
